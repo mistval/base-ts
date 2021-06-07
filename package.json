@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "Unlicense",
   "devDependencies": {
     "@types/node": "^15.12.1",
     "ts-node-dev": "^1.1.6",
