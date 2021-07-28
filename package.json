@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "ts-node-dev --respawn src",
     "tsc": "tsc",
+    "tscwatch": "tsc --watch",
     "lint": "eslint ./src/**/*.ts",
-    "lintfix": "eslint --fix ./src/**/*.ts"
+    "lintfix": "eslint --fix ./src/**/*.ts",
+    "prepublishOnly": "npm run lint && npm run tsc"
   },
   "keywords": [],
   "author": "",
