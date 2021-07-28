@@ -5,14 +5,21 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src",
-    "build": "tsc"
+    "tsc": "tsc",
+    "lint": "eslint ./src/**/*.ts",
+    "lintfix": "eslint --fix ./src/**/*.ts"
   },
   "keywords": [],
   "author": "",
   "license": "Unlicense",
   "devDependencies": {
     "@types/node": "^15.12.1",
-    "ts-node-dev": "^1.1.6",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.2"
   },
   "dependencies": {
